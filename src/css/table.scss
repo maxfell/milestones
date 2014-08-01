@@ -1,0 +1,189 @@
+.milestones table {
+  margin: 18px 0 0;
+  cursor: default;
+  thead tr th {
+    border-bottom: 2px solid $hoodie-lightgrey;
+    text-transform: uppercase;
+    font-size: 3*($hoodie-font-size)/4;
+    letter-spacing: 1px;
+    color: darken($hoodie-lightgrey, 10%);
+  }
+  tbody {
+    tr {
+      counter-increment: milestonesubnumber;
+
+      &.newMilestone {
+        counter-increment: milestonenumber;
+        counter-reset: milestonesubnumber;
+
+        th, td {
+          border-top: 2px solid $hoodie-lightgrey;
+        }
+
+        th.milestone {
+          width: 320px;
+
+          &:hover small {
+            color: #202020;
+          }
+
+          strong, small {
+            display: block;
+          }
+
+          strong {
+            &:before {
+              counter-increment: milestonesubnumber;
+              content: counter(milestonenumber);
+              display: inline-block;
+              height: 25px;
+              min-width: 25px;
+              border-radius: 25px;
+              line-height: 22px;
+              color: white;
+              background: $hoodie-blue;
+              font-size: 3*($hoodie-font-size)/4;
+              text-align: center;
+              margin-right: 4px;
+            }
+          }
+
+          small {
+            font-weight: normal;
+            padding: 12px 12px 0 16px;
+            color: #ccc;
+
+            ul, ol {
+              padding: 0;
+            }
+          }
+
+          img {
+            position: relative;
+            top: -3px;
+          }
+        }
+      }
+
+      td.task {
+        cursor: pointer;
+        &:hover {
+          background-color: #F5F5F5;
+
+          small {
+            color: #202020;
+          }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-size: inherit;
+          font-weight: bold;
+          margin: 0 0 10px;
+        }
+        strong {
+          display: block;
+          font-weight: normal;
+          &:before {
+            content: counter(milestonenumber) '.' counter(milestonesubnumber) ' ';
+          }
+
+          a {
+            color: #ccc;
+
+            &:hover, &:focus {
+              color: inherit;
+            }
+          }
+        }
+        small {
+          display: none;
+          padding: 12px 12px 0 26px;
+          color: #ccc;
+
+          > ul, ol {
+            padding: 0;
+
+            ul, ol {
+              padding-left: 16px;
+            }
+          }
+        }
+
+        &.showDescription small {
+          display: block;
+        }
+
+        .sub-task {
+          list-style: none;
+          input {
+            position: relative;
+            margin: 0 4px 0 -18px;
+          }
+        }
+      }
+
+      img {
+        border-radius: 100px;
+      }
+      td img {
+        position: relative;
+        top: -3px;
+        margin: -3px 0;
+      }
+      .progress {
+        display: inline-block;
+        margin: 5px 0 0;
+      }
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  th.milestone {
+    width: 240px !important;
+  }
+  tr, th, td, th.milestone {
+    padding: 0 18px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .milestones table {
+    margin: -1px 0 0;
+  }
+  thead {
+    display: none;
+  }
+  tbody {
+    tr, th, td, th.milestone {
+      display: block;
+      width: 100% !important;
+      //padding: 0 18px;
+    }
+    th.milestone + td {
+      border-top: 1px solid #DDD !important;
+    }
+    th.milestone  {
+      small {
+        display: none !important;
+      }
+      &.showDescription small {
+        display: block !important;
+      }
+    }
+    small {
+      color: #202020 !important;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  td.task .pull-right {
+    zoom: .75;
+  }
+  body{
+      font-size: 13pt;
+  }
+}

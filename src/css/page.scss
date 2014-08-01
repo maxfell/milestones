@@ -1,0 +1,36 @@
+html, body {
+  //background: #ddd;
+}
+body {
+  //font-family: Helvetica, Arial;
+  //line-height: 1.42857;
+  //color: #282726;
+}
+body > header {
+  padding: 18px;
+  background-color: #fff;
+}
+body > header a {
+  color: #fff !important;
+}
+body > header h1 {
+  margin: 0;
+  //font-size: 36px;
+  //font-weight: normal;
+}
+body > header h6 {
+  margin: 0;
+  color: #ccc;
+}
+body > p.info {
+  padding: 32px 8px 0;
+  font-size: 10px;
+  color: #888;
+}
+body > p.info a {
+  color: inherit;
+  text-decoration: underline;
+}
+.content {
+  background: $hoodie-white;
+}

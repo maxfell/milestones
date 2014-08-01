@@ -1,0 +1,26 @@
+.milestones .progress {
+  position: relative;
+  border-radius: 20px;
+  height: 20px;
+  background: $hoodie-white;
+  box-shadow: none;
+  border: 2px solid darken($hoodie-green, 5%);
+  //padding: 0 2px;
+
+
+  .progress-group{
+      border-right: 2px solid darken($hoodie-green, 5%);
+      //padding: 1px 0;
+
+  }
+
+  .progress-bar {
+      background: $hoodie-green;
+      box-shadow: none;
+    &.progress-bar-striped {
+      //background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+      background: $hoodie-palegreen;
+
+    }
+  }
+}
