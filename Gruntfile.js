@@ -131,12 +131,13 @@ module.exports = function(grunt) {
             'index.html',
             'js/*.js',
             'favicons/*.*',
+            'assets/**/*.*',
             'vendor/bootstrap/dist/css/bootstrap.css',
             'vendor/jquery/dist/jquery.js',
             'vendor/underscore/underscore.js',
             'vendor/bootstrap/dist/js/bootstrap.js',
             'vendor/initials/initials.js',
-            'vendor/markdown/lib/markdown.js'
+            'vendor/markdown/lib/markdown.js',
           ],
           dest: 'build/'
         }, {

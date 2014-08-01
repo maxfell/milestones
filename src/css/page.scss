@@ -1,10 +1,10 @@
 html, body {
-  background: #ddd;
+  //background: #ddd;
 }
 body {
-  font-family: Helvetica, Arial;
-  line-height: 1.42857;
-  color: #282726;
+  //font-family: Helvetica, Arial;
+  //line-height: 1.42857;
+  //color: #282726;
 }
 body > header {
   padding: 18px;
@@ -15,8 +15,8 @@ body > header a {
 }
 body > header h1 {
   margin: 0;
-  font-size: 36px;
-  font-weight: normal;
+  //font-size: 36px;
+  //font-weight: normal;
 }
 body > header h6 {
   margin: 0;
@@ -32,5 +32,5 @@ body > p.info a {
   text-decoration: underline;
 }
 .content {
-  background: #FFF
+  background: $hoodie-white;
 }

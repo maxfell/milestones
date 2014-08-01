@@ -2,9 +2,9 @@
   padding: 18px;
   overflow: auto;
   width: 100%;
-  background: #f3f3f3;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  background: $hoodie-lightbeige;
+  //border-top: 1px solid #ccc;
+  //border-bottom: 1px solid #ccc;
 
   .progress-group {
     position: relative;
@@ -19,19 +19,19 @@
 
   .milestone-label {
     position: relative;
-    font-size: 12px;
+    font-size: 3*($hoodie-font-size)/4;
     line-height: 14px;
     color: $brand-primary;
-    font-weight: bold;
-
+    font-weight: normal;
     &:before {
       content: '';
       display: block;
       position: absolute;
       top: 0;
       bottom: 0;
+      left: 2px;
       width: 2px;
-      background: #F3F3F3;
+      //background: #F3F3F3;
     }
     &:after {
       content: '';
@@ -39,13 +39,22 @@
       position: absolute;
       height: 14px;
       width: 1px;
-      background: $brand-primary;
-    }
+      //background: $brand-primary;
+  }
 
     span {
       position: relative;
-      display: block;
-      padding: 0 2px;
+      display: inline-block;
+      //padding: 0 2px;
+      padding: 8px 12px;
+      border-radius: 60px;
+      background: $hoodie-white;
+      margin: 4px 0;
+      //font-weight: 500;
+      letter-spacing: 1px;
+      border: 2px solid $hoodie-blue;
+      //text-transform: uppercase;
+
     }
   }
 
@@ -57,7 +66,7 @@
     .milestone-label {
       padding-bottom: 20px;
       margin-bottom: -20px;
-      border-left: 1px solid $brand-primary;
+      border-left: 2px solid $hoodie-blue;
       left: -1px;
 
       &:before {
@@ -70,7 +79,8 @@
 
       span {
         padding-bottom: 6px;
-        top: -2px;
+        top: -18px;
+        left: -2px;
       }
     }
   }
@@ -80,7 +90,7 @@
     margin: 0 -4px;
     padding-top: 6px;
     .milestone-label {
-      border-right: 1px solid $brand-primary;
+      border-right: 2px solid $hoodie-blue;
       text-align: right;
       padding-top: 20px;
       margin-top: -20px;
@@ -99,7 +109,8 @@
       }
 
       span {
-        top: 3px;
+        top: 18px;
+        right: -2px;
         padding-top: 6px;
       }
     }
@@ -107,5 +118,21 @@
 
   .summary {
     padding-top: 18px;
+    line-height: 25px;
+    font-size: 3*($hoodie-font-size)/4;
+
+    strong{
+        //border: 2px solid $hoodie-green;
+        background: $hoodie-green;
+        color: white;
+        border-radius: 20px;
+        line-height: 20px;
+        height: 20px;
+        padding: 0 5px;
+        min-width: 20px;
+        font-size: $hoodie-font-size/2;
+        text-align: center;
+        display: inline-block;
+    }
   }
 }
