@@ -4,7 +4,7 @@ $brand-info:            #693C10;
 $brand-warning:         #E94E1B;
 $brand-danger:          #BE1522;
 
-$fonts-dir: "../../assets/fonts/";
+$fonts-dir: "../assets/fonts/";
 
 @import '../vendor/bootstrap-sass-official/assets/stylesheets/bootstrap';
 @import '../vendor/hoodie-base-css/hoodie.scss';

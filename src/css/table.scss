@@ -11,6 +11,7 @@
   tbody {
     tr {
       counter-increment: milestonesubnumber;
+      //padding: 0 18px;
 
       &.newMilestone {
         counter-increment: milestonenumber;
@@ -18,13 +19,14 @@
 
         th, td {
           border-top: 2px solid $hoodie-lightgrey;
+          //margin: 0 18px;
         }
 
         th.milestone {
           width: 320px;
 
           &:hover small {
-            color: #202020;
+            //color: #202020;
           }
 
           strong, small {
@@ -50,8 +52,9 @@
 
           small {
             font-weight: normal;
+            font-size: 3*($hoodie-font-size)/4;
             padding: 12px 12px 0 16px;
-            color: #ccc;
+            color: $hoodie-darkgrey;
 
             ul, ol {
               padding: 0;
@@ -68,10 +71,10 @@
       td.task {
         cursor: pointer;
         &:hover {
-          background-color: #F5F5F5;
+          //
 
           small {
-            color: #202020;
+            color: $hoodie-darkgrey;
           }
         }
 
@@ -85,6 +88,16 @@
           font-weight: normal;
           &:before {
             content: counter(milestonenumber) '.' counter(milestonesubnumber) ' ';
+            background: $hoodie-paleblue;
+            padding: 0 3px;
+            border-radius: 3px;
+            width: 30px;
+            display: inline-block;
+            text-align: center;
+            margin-right: 3px;
+            font-size: 3*($hoodie-font-size)/4;
+            font-weight: 500;
+            color: $hoodie-blue;
           }
 
           a {
@@ -98,13 +111,19 @@
         small {
           display: none;
           padding: 12px 12px 0 26px;
-          color: #ccc;
-
+          color: $hoodie-darkgrey;
+          font-size: 3*($hoodie-font-size)/4;
+          background-color: #F5F5F5;
+          border-radius: 3px;
+          margin: 9px 0;
           > ul, ol {
             padding: 0;
 
             ul, ol {
               padding-left: 16px;
+            }
+            h3{
+                color: $hoodie-darkgrey;
             }
           }
         }
@@ -147,7 +166,12 @@
     width: 240px !important;
   }
   tr, th, td, th.milestone {
-    padding: 0 18px;
+    //padding: 0 18px;
+    //margin: 0 18px;
+  }
+  th, td {
+    //padding: 0 18px;
+    padding: 9px 18px !important;
   }
 }
 @media screen and (max-width: 640px) {
@@ -175,7 +199,7 @@
       }
     }
     small {
-      color: #202020 !important;
+      //color: #202020 !important;
     }
   }
 }
