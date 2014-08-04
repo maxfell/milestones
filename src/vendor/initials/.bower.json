@@ -1,0 +1,33 @@
+{
+  "name": "initials",
+  "version": "0.2.11",
+  "authors": [
+    "Gregor Martynus <gregor@martynus.net>"
+  ],
+  "description": "initials for names",
+  "main": "initials.js",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "http://gr2m.github.io/initials.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-editable-table": "~0.2.3",
+    "qunit": "~1.14.0"
+  },
+  "dependencies": {},
+  "_release": "0.2.11",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.11",
+    "commit": "59e693afae1f01d7943c17892cdc98a9e30ef6a5"
+  },
+  "_source": "git://github.com/gr2m/initials.js.git",
+  "_target": "^0.2.11",
+  "_originalSource": "initials"
+}

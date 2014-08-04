@@ -1,0 +1,25 @@
+{
+  "name": "initials",
+  "version": "0.2.11",
+  "description": "initials for names",
+  "main": "initials.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gr2m/initials.js"
+  },
+  "author": "Gregor Martynus <gregor@martynus.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gr2m/initials.js/issues"
+  },
+  "homepage": "http://gr2m.github.io/initials.js",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-qunit": "~0.4.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-bump": "0.0.13"
+  }
+}
